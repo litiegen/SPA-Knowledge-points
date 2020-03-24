@@ -1,0 +1,25 @@
+{
+  "name": "spa-knowledge-points",
+  "version": "1.0.0",
+  "description": "🎲H5 built in control and third-party component experiment",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litiegen/SPA-Knowledge-points.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litiegen/SPA-Knowledge-points/issues"
+  },
+  "homepage": "https://github.com/litiegen/SPA-Knowledge-points#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1"
+  }
+}
