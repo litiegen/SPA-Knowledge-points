@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     cssmin: {
       files: {   
         expand: true,
-        src: ['css/*.css', './*/*.css', './*/*/*.css', './*/css/*.css'],
+        src: ['css/*.css', './*/*.css', './*/*/*.css', './*/*/*/*.css','./*/css/*.css','./*/*/css/*.css'],
         dest: 'dist/'
       }
     },
@@ -32,6 +32,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
+
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
   grunt.registerTask('default', ['htmlmin','uglify','cssmin']);
