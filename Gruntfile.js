@@ -8,21 +8,15 @@ module.exports = function (grunt) {
       },
       files: {
         expand: true,
-        src: ['./*.html', './*/*.html', './*/*/*.html','./*/*/*/*.html'],
+        src: ['*.html', './*/*.html', './*/*/*.html'],
         dest: 'dist/'
       }
     },
     cssmin: {
-      options: {
-        mergeIntoShorthands: false,
-        roundingPrecision: -1
-      },
-      target: {
-        files: {
-          expand: true,
-          src: ['css/*.css', './*/*.css', './*/*/*.css'],
-          dest: 'dist/'
-        }
+      files: {   
+        expand: true,
+        src: ['css/*.css', './*/*.css', './*/*/*.css', './*/css/*.css'],
+        dest: 'dist/'
       }
     },
     uglify: {
@@ -36,9 +30,9 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
+  grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  grunt.registerTask('release', ['htmlmin','uglify','cssmin']);
+  grunt.registerTask('default', ['uglify','cssmin','htmlmin']);
 };

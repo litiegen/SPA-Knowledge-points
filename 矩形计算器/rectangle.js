@@ -3,7 +3,6 @@ $(function() {
         $height  = $('#rectangle-height'),
         $calc    = $('#rectangle-calc'),
         blnValid = false;
-
     $calc.click(function() {
         if(!blnValid) return;
         var width  = Number($width.val()),
