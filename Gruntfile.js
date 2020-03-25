@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       },
       files: {
         expand: true,
-        src: ['*.html', './*/*.html', './*/*/*.html'],
+        src: ['./*.html', './*/*.html', './*/*/*.html','./*/*/*/*.html'],
         dest: 'dist/'
       }
     },
@@ -34,5 +34,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  grunt.registerTask('default', ['uglify','cssmin', 'htmlmin']);
+  grunt.registerTask('default', ['htmlmin','uglify','cssmin']);
 };
