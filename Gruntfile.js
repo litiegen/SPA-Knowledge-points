@@ -15,7 +15,7 @@ module.exports = function (grunt) {
     cssmin: {
       files: {   
         expand: true,
-        src: ['css/*.css', './*/*.css', './*/*/*.css', './*/*/*/*.css','./*/css/*.css','./*/*/css/*.css'],
+        src: ['css/*.css', './*/*.css', './*/*/*.css'],
         dest: 'dist/'
       }
     },
