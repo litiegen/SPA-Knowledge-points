@@ -63,10 +63,6 @@ var spaDemoData = [
     'baseUrl': '02-validation',
     'demos': [
       {
-        'title': '字段级验证',
-        'url': '00-field-validation.html'
-      },
-      {
         'title': '字符级验证',
         'url': '01-char-validation.html'
       },
