@@ -29,23 +29,22 @@ module.exports = function (grunt) {
       }
     },
     imagemin: {
-      dist: {
-          options: {
-              optimizationLevel: 1
-          },
-          files: [{
-              expand: true,
-              cwd: '01-html-widget/images/',
-              src: ['**/*.{png,jpg,jpeg,gif}'],
-              dest: 'dist/01-html-widget/images/'
-          }]
+      options: {
+        optimizationLevel: 3
+      },
+      files: {
+        expand: true,
+        cwd: 'src/',
+        src: ['**/*.{png,jpg,gif}'],
+        dest: 'dist/'
       }
-  }
+    },
   });
 
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('default', ['uglify','cssmin', 'htmlmin','imagemin']);
 };
