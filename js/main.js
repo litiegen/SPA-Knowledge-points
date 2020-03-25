@@ -1,6 +1,8 @@
 $(function(){
     navBar.init($('.spa-nav'));
     spaStage.init($('.spa-content'));
+    $forkMeGH.show('https://github.com/litiegen/SPA-Knowledge-points');
+    $bszPageFooter.show('body');
   
     navBar.on('title-click', function(isOpen) {
       var display = isOpen ? 'none': 'block';

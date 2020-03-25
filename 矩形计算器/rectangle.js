@@ -3,9 +3,7 @@ $(function() {
         $height  = $('#rectangle-height'),
         $calc    = $('#rectangle-calc'),
         blnValid = false;
-    
-    $forkMeGH.show('https://github.com/litiegen/Assembly');
-    $bszPageFooter.show('body');
+
     $calc.click(function() {
         if(!blnValid) return;
         var width  = Number($width.val()),
