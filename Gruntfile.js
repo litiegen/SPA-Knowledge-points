@@ -27,7 +27,20 @@ module.exports = function (grunt) {
           dest: 'dist/'
         }]
       }
-    }
+    },
+    imagemin: {
+      dist: {
+          options: {
+              optimizationLevel: 1
+          },
+          files: [{
+              expand: true,
+              cwd: '01-html-widget/images/',
+              src: ['**/*.{png,jpg,jpeg,gif}'],
+              dest: 'dist/01-html-widget/images/'
+          }]
+      }
+  }
   });
 
   grunt.loadNpmTasks("grunt-contrib-htmlmin");
