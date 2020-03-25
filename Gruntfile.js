@@ -8,14 +8,14 @@ module.exports = function (grunt) {
       },
       files: {
         expand: true,
-        src: ['*.html', './*/*.html', './*/*/*.html'],
+        src: ['*.html', './*/*.html', '??-*/??-*/*.html'],
         dest: 'dist/'
       }
     },
     cssmin: {
       files: {   
         expand: true,
-        src: ['css/*.css', './*/*.css', './*/*/*.css', './*/css/*.css'],
+        src: ['css/*.css', './*/*.css', '??-*/??-*/*.css', '??-*/css/*.css'],
         dest: 'dist/'
       }
     },
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
       main: {
         files: [{
           expand: true,
-          src: ['js/*.js', './*/*.js', './*/*/*.js', './*/js/*.js'],
+          src: ['js/*.js', './*/*.js', '??-*/0?-*/*.js', '??-*/js/*.js'],
           dest: 'dist/'
         }]
       }
@@ -34,5 +34,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-cssmin");
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  grunt.registerTask('default', ['uglify','cssmin','htmlmin']);
+  grunt.registerTask('default', ['uglify','cssmin', 'htmlmin']);
 };
