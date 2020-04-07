@@ -14,23 +14,23 @@ var spaDemoData = [
     'demos': [
       {
         'title': '按钮类控件',
-        'url': '01-button.html'
+        'url': '1button/01-button.html'
       },
       {
         'title': '按钮类控件样式设置',
-        'url': '02-button.html'
+        'url': '2button/02-button.html'
       },
       {
         'title': '按钮类控件常见样式',
-        'url': '03-button.html'
+        'url': '3button/03-button.html'
       },
       {
         'title': '定时器按钮',
-        'url': '04-button.html'
+        'url': '4button/04-button.html'
       },
       {
         'title': '按钮事件处理',
-        'url': '05-button.html'
+        'url': '5button/05-button.html'
       },
       {
         'title': '文本框控件',

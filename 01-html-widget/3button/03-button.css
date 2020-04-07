@@ -48,15 +48,15 @@ input {
 }
 
 #play-button {
-  background-image: url('images/paly.png');
+  background-image: url('../images/paly.png');
 }
 
 #pause-button {
-  background-image: url('images/pause.png');
+  background-image: url('../images/pause.png');
 }
 
 #stop-button {
-  background-image: url('images/stop.png');
+  background-image: url('../images/stop.png');
 }
 
 #play-button, #pause-button, #stop-button {
