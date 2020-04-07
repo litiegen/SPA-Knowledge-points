@@ -1,0 +1,1 @@
+!function(){var a={init:function(a){var n=$('<iframe frameborder="0"></iframe>');n.attr("src","矩形计算器/index.html"),a.append(n)},show:function(a){a.display&&$(".spa-content").css({display:a.display}),a.href&&$(".spa-content iframe").attr("src",a.href)}};window.spaStage=a}();
